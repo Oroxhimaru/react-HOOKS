@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FirstHook from './components/FirstHook';
+import SecondHook from './components/SecondHook';
+import SecondHooksContinue from './components/SecondHooksContinue';
+import Modal from './components/Modal';
+import Form from './components/Form';
+import Content from './components/Content';
+import DOMManipulationComponent from './components/DOMManipulationComponent';
+import WebSocketComponent from './components/WebSocketComponent';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <FirstHook />
+    <Modal />
+    <Form />
+    <Content />
+    <SecondHook />
+    <SecondHooksContinue />
+    <DOMManipulationComponent />
     </div>
   );
 }
